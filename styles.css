@@ -1,5 +1,8 @@
 :root {
     --gray: #b5b5b5;
+    --color-blue: #0e628a;
+    --color-button: #fdffff;
+    --color-black: #000;
 }
 
 *{
@@ -19,15 +22,36 @@ body{
 
 header {
     width: 100vw;
-    height: 8rem;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main{
+    height: 80vh;
+    width: 100vw;
+    background-color: #7f84b6;
 }
 
 nav {
     font-family: 'Hind', sans-serif;
 }
 .f_title{
+    width: 20vw;
     display: inline;
     font-family: 'Hind', sans-serif;
+    color: #6f9cdf;
+    font-weight: 300;
+    font-size: 2.2rem;
+}
+
+.manga {
+    font-weight: 600;
+}
+
+.online {
+    font-style: italic
 }
 
 /*.nav_ul{
@@ -35,6 +59,9 @@ nav {
     justify-content: right;
 }*/
 
+ul{
+    display: inline-block;
+}
 ul a{
     font-size: 2rem;
     list-style: none;
@@ -44,9 +71,54 @@ ul a{
     padding: 5px;
 }
 
+.eye{
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    color: var(--gray);
+    border-radius: 5px;
+}
+
+.switch-button {
+    display: inline-block;
+    width: 10px;
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background-color: var(--color-button);
+    width: 2.7rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+    display: inline-block;
+    position: relative;
+    border: #000 solid 1.5px;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-blue);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(1rem);
+}
+
 .Main_container {
     font-family: 'Hind', sans-serif;
     display: flex;
+    justify-content: center;
 }
 
 .D_container {
@@ -80,4 +152,45 @@ ul a{
     font-size: 2rem;
     display: inline-block;
     color: var(--gray)
+}
+
+.likes_box {
+    width: 100vw;
+    height: 10vh;
+    background-color: #01091d;
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    background-color: #01091d;
+    border:none;
+    padding: 5px;
+}
+
+button span{
+    font-size: 3.5rem;
+}
+.boton1{
+    color: #51a351;
+}
+
+.boton2 {
+    color: #f89406
+}
+
+.boton3{
+    color: #2f96b4;
+}
+
+.boton4{
+    color: #bd362f;
+}
+
+.boton5 {
+    color: #007bff;
+}
+
+.boton6 {
+    color: #e83e8c;
 }

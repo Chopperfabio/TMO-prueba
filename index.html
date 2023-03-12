@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TMO</title>
-    <link rel="icon" href="./img/tmo logo.png">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/logo tmo.png">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./Phone.css" media="screen and (min-width: 750px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,22 +14,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e3ca22097a.js" crossorigin="anonymous"></script>
 <body>
     <header>
         <nav>
-            <h2 class="f_title">TU<span>MANGA</span>ONLINE</h2>
+            <h2 class="f_title">TU<span class="manga">MANGA</span><span class="online">ONLINE</span></h2>
             <ul class="nav_ul">
-                <a href=""><li class="case">Biblioteca</li></a>
-                <a href=""><li class="case2">Grupos</li></a>
-                <a href=""><li class="case3">Listas</li></a>
-                <a href=""><li class="case4">Foro</li></a>
+                <a href=""><li class="case1 case">Biblioteca</li></a>
+                <a href=""><li class="case2 case">Grupos</li></a>
+                <a href=""><li class="case3 case">Listas</li></a>
+                <a href=""><li class="case4 case">Foro</li></a>
             </ul>
+            <button class="eye"><i class="fa-solid fa-eye"></i></button>
+            <div class="switch-button">
+                <!-- Checkbox -->
+                <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+                <!-- Botón -->
+                <label for="switch-label" class="switch-button__label"></label>
+            </div>
         </nav>
     </header>
     <main>
         <section class="Main_container">
             <figure class="img_box">
-                <img src="./img/blue lock portada2.png" alt="">
+                <img src="./img/blue lock portada2.png" alt="" class="img">
             </figure>
             <article class="D_container">
                 <h1 class="title">Blue Lock</h1> <h3 class="year">( 2018 )</h3>
@@ -39,6 +47,13 @@
             </article>
         </section>
     </main>
-    <footer></footer>
+    <div class="likes_box">
+        <button class="boton"><span class="boton1"><i class="fa-regular fa-circle-check"></i></span></button>
+        <button class="boton"><span class="boton2"><i class="fa-regular fa-clock"></i></span></i></button>
+        <button class="boton"><span class="boton3"><i class="fa-regular fa-circle-play"></i></span></button>
+        <button class="boton"><span class="boton4"><i class="fa-regular fa-heart"></i></span></button>
+        <button class="boton"><span class="boton5"><i class="fa-regular fa-square-check"></i></span></button>
+        <button class="boton"><span class="boton6"><i class="fa-regular fa-thumbs-down"></i></span></button>
+    </div>
 </body>
 </html>
